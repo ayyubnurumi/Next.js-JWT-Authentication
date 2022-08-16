@@ -4,13 +4,6 @@ import { userService } from '../services/user.service';
 
 const { publicRuntimeConfig } = getConfig();
 
-export const fetchWrapper = {
-    get,
-    post,
-    put,
-    delete: _delete
-};
-
 function get(url) {
     const requestOptions = {
         method: 'GET',
@@ -78,3 +71,10 @@ function handleResponse(response) {
         return data;
     });
 }
+
+export const fetchWrapper = {
+    get,
+    post,
+    put,
+    delete: _delete
+};

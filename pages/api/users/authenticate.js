@@ -8,8 +8,6 @@ const { serverRuntimeConfig } = getConfig();
 // users in JSON file for simplicity, store in a db for production applications
 const users = require('/data/users.json');
 
-export default apiHandler(handler);
-
 function handler(req, res) {
     switch (req.method) {
         case 'POST':
@@ -37,3 +35,5 @@ function handler(req, res) {
         });
     }
 }
+
+export default handler;
