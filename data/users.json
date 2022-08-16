@@ -3,7 +3,7 @@
         "id": 1,
         "username": "test",
         "password": "test",
-        "firstName": "Ayyub",
-        "lastName": "Nurumi"
+        "firstName": "Test",
+        "lastName": "User"
     }
 ]
