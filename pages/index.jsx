@@ -11,9 +11,13 @@ function Home() {
         userService.getAll().then(x => setUsers(x));
     }, []);
 
+    var username = JSON.parse(localStorage.getItem("user"));
+    console.log(username);
+    // console.log(localStorage.getItem("user"))
+
     return (
         <div className="card mt-4">
-            <h4 className="card-header">You're logged in with Next.js 11 & JWT!!</h4>
+            <h4 className="card-header">Wellcome {(username.username)}</h4>
             <div className="card-body">
                 <h6>Users from secure api end point</h6>
                 {users &&
